@@ -9,6 +9,16 @@ A self-directed analyst exercise: given database credentials and no data diction
 
 **→ Five-minute version: [findings/00_executive_summary.md](findings/00_executive_summary.md)**
 
+## At a glance
+
+<table>
+<tr>
+<td width="33%"><img src="figures/orders_per_customer.png" alt="Half of customers order once; a small tail orders constantly"></td>
+<td width="33%"><img src="figures/weekly_revenue_trend.png" alt="Revenue peaked in early April and has fallen every week since"></td>
+<td width="33%"><img src="figures/segment_revenue_share.png" alt="3.1% of customers drive 30% of revenue"></td>
+</tr>
+</table>
+
 ## What's in here
 
 | Milestone | Question | SQL | Findings |
@@ -17,7 +27,7 @@ A self-directed analyst exercise: given database credentials and no data diction
 | 2 | Is the business growing? What does an average order look like? | [02_revenue.sql](sql/02_revenue.sql) | [02_business_health.md](findings/02_business_health.md) |
 | 3 | Who actually shops here, and where should Q4 marketing spend go? | [03_customers.sql](sql/03_customers.sql) | [03_customer_segments.md](findings/03_customer_segments.md) |
 
-Each SQL file is commented like a lab notebook — what I checked and why, in the order I ran it — so it reads standalone, not just as a script to execute.
+Each SQL file is commented like a lab notebook — what I checked and why, in the order I ran it — so it reads standalone, not just as a script to execute. Figures are regenerated from the live database via [scripts/make_figures.py](scripts/make_figures.py).
 
 ## Running it yourself
 
